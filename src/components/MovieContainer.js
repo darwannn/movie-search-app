@@ -29,8 +29,8 @@ export default function MovieContainer({
     }
     setAlertSnackbarMessage(
       isInWatchList
-        ? `${movieData.Title} removed from watch list`
-        : `${movieData.Title} added to watch list`
+        ? `${movieData.Title} removed from your watchlist`
+        : `${movieData.Title} added to your watchlist`
     );
     setWatchList(updatedWatchList);
     setIsSnackbarShowed(true);

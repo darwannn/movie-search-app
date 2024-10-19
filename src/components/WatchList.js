@@ -40,9 +40,16 @@ export default function WatchList({
           <CancelIcon onClick={() => setIsDrawerOpen(false)} />
         </Box>
         <Typography variant="h5" sx={{ mt: 2, mb: 2, fontWeight: 700 }}>
-          Watch List
+          Watchlist
         </Typography>
-        <Stack spacing={2}>
+        <Stack
+          spacing={2}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
           {watchList.length > 0 ? (
             watchList.map((movie) => (
               <Box
@@ -55,7 +62,11 @@ export default function WatchList({
                 }}
                 onMouseEnter={() => setHoveredMovie(movie.imdbID)}
                 onMouseLeave={() => setHoveredMovie(null)}
-                sx={{ cursor: "pointer", width: 150, height: "auto" }}
+                sx={{
+                  cursor: "pointer",
+                  width: 150,
+                  height: "auto",
+                }}
               >
                 <img
                   alt={movie.Title}
@@ -82,7 +93,7 @@ export default function WatchList({
             ))
           ) : (
             <Typography variant="body1">
-              No movies in your watch list.
+              No movies in your watchlist.
             </Typography>
           )}
         </Stack>
