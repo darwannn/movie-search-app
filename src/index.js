@@ -13,6 +13,7 @@ const primaryMainColor = "#15141F";
 const primarySecondaryColor = "#211F30";
 const secondaryMainColor = "#DB5742";
 const textMainColor = "#6B6A6A";
+
 const theme = createTheme({
   palette: {
     primary: {

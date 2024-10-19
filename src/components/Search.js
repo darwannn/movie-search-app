@@ -10,7 +10,6 @@ import {
   Select,
   MenuItem,
 } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
 import { useState } from "react";
 
@@ -19,6 +18,7 @@ import Axios from "axios";
 import backgroundImage from "../assets/img/app_background.jpg";
 
 import NoFoundDialog from "./NoFoundDialog";
+
 export default function Search({ setMovieData }) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [plot, setPlot] = useState("Short");
@@ -28,7 +28,7 @@ export default function Search({ setMovieData }) {
   const ApiKey = "a01cab1";
   const [titleError, setTitleError] = useState("");
   const [currentBg, setCurrentBg] = useState(backgroundImage);
-  const theme = useTheme();
+
   const handleChange = (e) => {
     setPlot(e.target.value);
   };

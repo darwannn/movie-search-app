@@ -11,7 +11,6 @@ function AlertSnackbar({
       autoHideDuration={3000}
       onClose={handleSnackbarClose}
     >
-      {/* remove this after 5 seconds */}
       <Alert
         onClose={handleSnackbarClose}
         severity={type}

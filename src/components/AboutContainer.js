@@ -11,7 +11,7 @@ import FirebaseIcon from "../assets/img/icon/Firebase-Light.svg";
 import FlutterIcon from "../assets/img/icon/Flutter-Light.svg";
 import KotlinIcon from "../assets/img/icon/Kotlin-Light.svg";
 import laravelIcon from "../assets/img/icon/Laravel-Light.svg";
-import mongotIcon from "../assets/img/icon/MongoDB.svg";
+import mongoIcon from "../assets/img/icon/MongoDB.svg";
 import mySQLIcon from "../assets/img/icon/MySQL-Light.svg";
 import reactIcon from "../assets/img/icon/React-Light.svg";
 import springbootIcon from "../assets/img/icon/Spring-Light.svg";
@@ -44,7 +44,7 @@ export default function AboutContainer() {
       tailwindIcon,
       reactIcon,
       expressIcon,
-      mongotIcon,
+      mongoIcon,
       laravelIcon,
       mySQLIcon,
     ],

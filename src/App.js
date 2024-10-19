@@ -1,4 +1,6 @@
-import { useState, useEffect, Fragment, useRef, act } from "react";
+import { useState, useEffect, Fragment, useRef } from "react";
+
+import Axios from "axios";
 
 import AboutContainer from "./components/AboutContainer";
 import AlertSnackbar from "./components/AlertSnackbar";
@@ -6,7 +8,7 @@ import MovieContainer from "./components/MovieContainer";
 import Navbar from "./components/Navbar";
 import Search from "./components/Search";
 import WatchList from "./components/WatchList";
-import Axios from "axios";
+
 export default function App() {
   const movieDetailsRef = useRef(null);
   const aboutDevelopersRef = useRef(null);
