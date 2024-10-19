@@ -42,6 +42,7 @@ export default function App() {
       const actors = movieData.Actors.split(",");
       actors?.map((name) => {
         name = name.replace(".", "").trim(); // Remove unnecessary text
+        setActorsDetails([]);
         Axios({
           url: `https://www.omdbapi.com/?apikey=973ba4c4&t=${name}`,
           method: "GET",
